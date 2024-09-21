@@ -1,8 +1,14 @@
-import { useEffect } from 'react';
-import styles from './App.module.css'
-import { LogoDefault, LogoOutline, ArrowDown } from './assets/images';
+import { useEffect } from "react";
+import styles from "./App.module.css";
+import {
+  LogoDefault,
+  LogoOutline,
+  ArrowDown,
+  GitHubIcon,
+  DribbleIcon,
+  FigmaIcon,
+} from "./assets/images";
 function App() {
-
   return (
     <div className={styles.portfolioContainer}>
       <header className={styles.header}>
@@ -12,23 +18,43 @@ function App() {
         </div>
         <nav className={styles.nav}>
           <a href="">
-            <p><span>#</span> home</p>
+            <p>
+              <span>#</span> home
+            </p>
           </a>
           <a href="">
-            <p><span>#</span> works</p>
+            <p>
+              <span>#</span> works
+            </p>
           </a>
           <a href="">
-            <p><span>#</span> about-me</p>
+            <p>
+              <span>#</span> about-me
+            </p>
           </a>
           <a href="">
-            <p><span>#</span> contacts</p>
+            <p>
+              <span>#</span> contacts
+            </p>
           </a>
-          <button>
-            <p>EN</p>
-            <img src={ArrowDown} alt="icone de seta para baixo" />
-          </button>
+          <select name="" id="">
+            <option value="">EN</option>
+            <option value="">PT</option>
+          </select>
         </nav>
       </header>
+      <aside className={styles.asideMedia}>
+        <div className={styles.line}></div>
+        <a href="">
+          <img src={GitHubIcon} alt="icone do github" />
+        </a>
+        <a href="">
+          <img src={DribbleIcon} alt="icone do dribble" />
+        </a>
+        <a href="">
+          <img src={FigmaIcon} alt="icone do figma" />
+        </a>
+      </aside>
     </div>
   );
 }

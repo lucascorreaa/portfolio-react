@@ -5,9 +5,12 @@
   --white-color: #FFFFFF;
 }
 
+body {
+  background-color: var(--background-color);
+}
+
 .portfolioContainer {
   width: 100%;
-
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -60,18 +63,39 @@
  align-items: center;
 }
 
-.nav button {
+.nav select {
   display: flex;
   background-color: transparent;
   justify-content: center;
   align-items: center;
   color: var(--gray-color);
   border: none;
-  width: 34px;
+  /* width: 34px; */
   height: 21px;
   gap: 4px;
 }
 
 .nav span {
   color: var(--purple-color);
+}
+
+.asideMedia {
+  position: absolute;
+
+  top: 0;
+  left: 17px;
+
+  width: 32px;
+  height: 311px;
+  gap: 8px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.line {
+  width: 1px;
+  height: 191px;
+  background-color: var(--gray-color);
 }
