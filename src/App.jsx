@@ -1,7 +1,8 @@
+import { useEffect } from 'react';
 import styles from './App.module.css'
-import LogoDefault from './assets/images/logo-default.svg'
-import ArrowDown from './assets/images/arrow-down.svg'
+import { LogoDefault, LogoOutline, ArrowDown } from './assets/images';
 function App() {
+
   return (
     <div className={styles.portfolioContainer}>
       <header className={styles.header}>

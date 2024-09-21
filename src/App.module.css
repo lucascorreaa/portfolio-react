@@ -22,6 +22,7 @@
 
   justify-content: space-between;
   align-items: flex-end;
+  padding-bottom: 8px;
 }
 
 .headerTitle {
@@ -41,4 +42,36 @@
   font-weight: 700;
   font-size: 16px;
   color: var(--white-color);
+}
+
+.nav {
+  width: 100%;
+  display: flex;
+  gap: 32px;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+}
+
+.nav p {
+ color: var(--gray-color);
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+.nav button {
+  display: flex;
+  background-color: transparent;
+  justify-content: center;
+  align-items: center;
+  color: var(--gray-color);
+  border: none;
+  width: 34px;
+  height: 21px;
+  gap: 4px;
+}
+
+.nav span {
+  color: var(--purple-color);
 }
